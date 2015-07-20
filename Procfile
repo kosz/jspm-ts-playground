@@ -1,1 +1,1 @@
-web: npm install jspm -g && jspm install && npm start
+web: npm install && npm install jspm -g && jspm install && npm start
