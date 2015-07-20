@@ -1,9 +1,18 @@
+import Bacon from "baconjs"
+
+//import Bacon from "baconjs"
+
+var something = 'something';
+
 class Greeter {
     constructor(public greeting: string) { }
     greet() {
-        return "<h1>" + this.greeting + "</h1>";
+        return "<h3>" + this.greeting + "</h3>";
     }
 };
+
+console.log('hello this is', something);
+console.log('bacon -> ', Bacon);
 
 var greeter = new Greeter("Hello, world!");
 
