@@ -7,22 +7,51 @@ module.exports = function(config) {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-systemjs',
+      'karma-mocha'
+    ],
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+    frameworks: [
+      'mocha',
+      'systemjs'
+    ],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'www/**/*.ts'
+      //'www/simple.spec.js'
     ],
+    
+    systemjs: {
+      // Path to your SystemJS configuration file 
+      configFile: 'www/config.js',
+
+      // File patterns for your application code, dependencies, and test suites 
+      files: [
+        'www/app.spec.ts',
+        'www/**/*.ts'
+      ],
+
+      // SystemJS configuration specifically for tests, added after your config file. 
+      // Good for adding test libraries and mock modules 
+      //config: {
+      //  paths: {
+      //    'angular-mocks': 'bower_components/angular-mocks/angular-mocks.js'
+      //  }
+      //},
+
+      // Specify the suffix used for test suite file names.  Defaults to .test.js, .spec.js, _test.js, and _spec.js 
+      testFileSuffix: '.spec.ts'
+    },
 
 
     // list of files to exclude
     exclude: [
     ],
-
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor

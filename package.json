@@ -12,9 +12,18 @@
   "devDependencies": {
     "chai": "^3.2.0",
     "http-server": "^0.8.0",
+    "karma": "^0.13.2",
     "karma-chrome-launcher": "^0.2.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-mocha": "^0.2.0",
+    "karma-phantomjs-launcher": "^0.2.0",
     "karma-systemjs": "^0.7.1",
-    "karma-typescript-preprocessor": "0.0.19"
+    "karma-typescript-preprocessor": "0.0.19",
+    "mocha": "^2.2.5",
+    "phantomjs": "^1.9.17",
+    "phantomjs-polyfill": "0.0.1",
+    "systemjs": "^0.18.4",
+    "traceur": "0.0.91"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,12 +44,15 @@
       "baseURL": "www"
     },
     "dependencies": {
+      "babel": "npm:babel-core@^5.7.4",
       "baconjs": "npm:baconjs@^0.7.70",
+      "chai": "npm:chai@^3.2.0",
       "ts": "github:frankwallis/plugin-typescript@^2.0.2"
     },
     "devDependencies": {
-      "traceur": "github:jmcriffey/bower-traceur@0.0.88",
-      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
+      "babel": "npm:babel-core@^5.7.4",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
     }
   }
 }
