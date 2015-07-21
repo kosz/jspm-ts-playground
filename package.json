@@ -23,7 +23,8 @@
     "phantomjs": "^1.9.17",
     "phantomjs-polyfill": "0.0.1",
     "systemjs": "^0.18.4",
-    "traceur": "0.0.91"
+    "traceur": "0.0.91",
+    "typescript": "^1.5.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

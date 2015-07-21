@@ -1,18 +1,18 @@
 System.config({
   "baseURL": "/",
-  "transpiler": "typescript",
-  //"babelOptions": {
-  //  "optional": [
-  //    "runtime"
-  //  ]
-  //},
+  "transpiler": "babel",
+  "babelOptions": {
+    "optional": [
+      "runtime"
+    ]
+  },
   "paths": {
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
+    "typescript:*": "node_modules/typescript/bin/typescript.js",
     "npm:*": "jspm_packages/npm/*.js",
-    "systemjs": "../node_modules/systemjs/dist/system.js",
-    "system-polyfills": "../node_modules/systemjs/dist/system-polyfills.js",
-    "es6-module-loader": "../node_modules/es6-module-loader/dist/es6-module-loader.js"
+    "system-polyfills": "node_modules/systemjs/dist/system-polyfills.js",
+    "es6-module-loader": "node_modules/es6-module-loader/dist/es6-module-loader.js"
   },
   "packages": {
     "app": {
@@ -100,4 +100,3 @@ System.config({
     }
   }
 });
-
