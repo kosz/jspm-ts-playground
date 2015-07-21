@@ -23,7 +23,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      //'www/simple.spec.js'
+      //'www/app.spec.ts'
     ],
     
     systemjs: {
@@ -32,6 +32,7 @@ module.exports = function(config) {
 
       // File patterns for your application code, dependencies, and test suites 
       files: [
+        'www/jspm_packages/system.js',
         'www/app.spec.ts',
         'www/**/*.ts'
       ],

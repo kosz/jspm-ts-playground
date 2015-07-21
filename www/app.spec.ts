@@ -1,5 +1,3 @@
-/// <reference path="../../../../typings/tsd.d.ts"/>
-
 import {expect} from 'chai';
 
 console.log('test ts');

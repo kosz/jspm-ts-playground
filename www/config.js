@@ -1,11 +1,11 @@
 System.config({
   "baseURL": "/",
-  "transpiler": "babel",
-  "babelOptions": {
-    "optional": [
-      "runtime"
-    ]
-  },
+  "transpiler": "typescript",
+  //"babelOptions": {
+  //  "optional": [
+  //    "runtime"
+  //  ]
+  //},
   "paths": {
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
@@ -31,13 +31,9 @@ System.config({
 
 System.config({
   "map": {
-    "babel": "npm:babel-core@5.7.4",
-    "babel-runtime": "npm:babel-runtime@5.7.0",
     "baconjs": "npm:baconjs@0.7.70",
     "chai": "npm:chai@3.2.0",
     "core-js": "npm:core-js@0.9.18",
-    "traceur": "github:jmcriffey/bower-traceur@0.0.88",
-    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
     "ts": "github:frankwallis/plugin-typescript@2.0.2",
     "github:frankwallis/plugin-typescript@2.0.2": {
       "typescript": "github:mhegazy/typescript@v1.5-beta2"
